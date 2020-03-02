@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sean.dds.demo.mapper.ArticleInfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.sean.dds.demo.entity.ArticleInfo">
+        <id column="id" property="id" />
+        <result column="sku_no" property="skuNo" />
+        <result column="article_type" property="articleType" />
+        <result column="article_brand" property="articleBrand" />
+        <result column="article_name" property="articleName" />
+        <result column="article_img_id" property="articleImgId" />
+        <result column="article_img_url" property="articleImgUrl" />
+        <result column="unit_id" property="unitId" />
+        <result column="spec" property="spec" />
+        <result column="net_weight" property="netWeight" />
+        <result column="net_weight_unit" property="netWeightUnit" />
+        <result column="spec_length" property="specLength" />
+        <result column="spec_height" property="specHeight" />
+        <result column="spec_width" property="specWidth" />
+        <result column="category_id" property="categoryId" />
+        <result column="safe_date" property="safeDate" />
+        <result column="safe_date_unit" property="safeDateUnit" />
+        <result column="status" property="status" />
+        <result column="on_sale" property="onSale" />
+        <result column="del_flg" property="delFlg" />
+        <result column="create_by" property="createBy" />
+        <result column="update_by" property="updateBy" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, sku_no, article_type, article_brand, article_name, article_img_id, article_img_url, unit_id, spec, net_weight, net_weight_unit, spec_length, spec_height, spec_width, category_id, safe_date, safe_date_unit, status, on_sale, del_flg, create_by, update_by, create_time, update_time
+    </sql>
+
+</mapper>

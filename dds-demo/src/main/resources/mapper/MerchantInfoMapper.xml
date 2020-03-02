@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sean.dds.demo.mapper.MerchantInfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.sean.dds.demo.entity.MerchantInfo">
+        <id column="merchant_id" property="merchantId" />
+        <result column="pid" property="pid" />
+        <result column="ancestor_id" property="ancestorId" />
+        <result column="company_name" property="companyName" />
+        <result column="province" property="province" />
+        <result column="city" property="city" />
+        <result column="district" property="district" />
+        <result column="street" property="street" />
+        <result column="address" property="address" />
+        <result column="concat_person" property="concatPerson" />
+        <result column="concat_phone" property="concatPhone" />
+        <result column="del_flg" property="delFlg" />
+        <result column="create_by" property="createBy" />
+        <result column="update_by" property="updateBy" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        merchant_id, pid, ancestor_id, company_name, province, city, district, street, address, concat_person, concat_phone, del_flg, create_by, update_by, create_time, update_time
+    </sql>
+
+</mapper>

@@ -1,0 +1,18 @@
+
+dds:
+  default-key: db0
+  properties:
+    db0:
+#      type: com.alibaba.druid.pool.DruidDataSource
+      driverClassName: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://10.10.0.121:3306/zssp-merchant?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
+      username: root
+      password: Admin
+    db1:
+      driverClassName: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://10.10.0.121:3306/zssp-article?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
+      username: root
+      password: Admin
+spring:
+  aop:
+    auto: true
