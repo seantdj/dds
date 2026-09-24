@@ -19,7 +19,7 @@
         <mybatisp.version>3.3.1</mybatisp.version>
         <mybatisp-generator.version>3.3.1.tmp</mybatisp-generator.version>
         <fastjson.version>1.2.60</fastjson.version>
-        <freemarker.version>2.3.28</freemarker.version>
+        <freemarker.version>2.3.35</freemarker.version>
     </properties>
 
     <dependencies>
